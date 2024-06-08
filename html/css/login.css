@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    
+    background-image: repeating-conic-gradient(#1e5c88b0 5%, #97c9eb 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#98c1d9, #3d5a80);
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .head {
+    background: linear-gradient(#64cef1, #012733);
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+  
+  .head h1,
+  .head p {
+    text-align: center;
+    color: white;
+  }
+  
+  .head p {
+    font-size: 12px;
+  }
+  
+  label {
+    margin-left: 20px;
+    color: white;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin: 5px 20px 20px 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border: 1px solid rgb(0, 132, 255);
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    outline: none;
+    background: linear-gradient(#38c3f1, #227088);
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 10px 20px;
+    color: rgb(247, 213, 213);
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  button:hover {
+    background: #064052;
+  }
+  
+  .forgot-password {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .signup-option {
+    margin: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .signup-option a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .signup-option a:hover {
+    text-decoration: underline;
+  }
+  

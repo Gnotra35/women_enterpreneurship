@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #d1dce3;
+    font-family: arial, sans-serif;
+}
+
+.app-bar {
+    background: linear-gradient(#3d565e, #012733); 
+    color: white;
+    padding: 0px; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu-item {
+    margin-right: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .login-btn {
+    background-color: #FFD700;
+    color: black;
+  
+    padding-left: 5px;
+    margin-right:15px;
+    cursor: pointer;
+  
+  }
+  
+  .content-items img {
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+  }
+  
+  .logo img {
+    height: 70px;
+    width: 100px;
+  }
+  
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.course-section {
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.course-section h2 {
+    text-align: left;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.course-section a {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #032B44;
+    text-decoration: underline;
+}
+
+.course-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #032B44;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer nav ul li {
+    margin: 0.5rem;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+footer nav ul li a:hover {
+    background-color: #fff;
+    color: #032B44;
+    transition: 0.3s ease;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.social-media a:hover {
+    color: #ccc;
+    transition: 0.3s ease;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    background: #012733;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-column a {
+    margin-bottom: 10px;
+    color: #ff6f42;
+  }
+  
+  /* Contact Icon */
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 40%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+  }
+  
+  .contact-icon:hover {
+    background: linear-gradient(135deg, #0056b3, #003366);
+   
+  }
+  
+  .contact-icon i {
+    font-size: 28px;
+  }
+  
+  
+  .project-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(rgb(84, 165, 197),rgb(9, 77, 104));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 55%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+  }
+  
+  .project-icon:hover {
+    background: linear-gradient( rgb(84, 165, 197),rgb(9, 77, 104));
+   
+  }
+  
+  .project-icon i {
+    font-size: 22px;
+    margin: 0 2px;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: translateY(-50%) scale(1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+      transform: translateY(-50%) scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+  }
+  

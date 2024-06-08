@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d1dce3 ;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: d1dce3;
+    color: #333;
+}
+.app-bar {
+    background: linear-gradient(#3d565e, #012733); 
+    color: white;
+    padding: 0px; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu-item {
+    margin-right: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .login-btn {
+    background-color: #FFD700;
+    color: black;
+  
+    padding-left: 5px;
+    margin-right:15px;
+    cursor: pointer;
+  
+  }
+  
+  .content-items img {
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+  }
+  
+  .logo img {
+    height: 70px;
+    width: 100px;
+  }
+  
+h1{
+    text-align:center;
+    margin: 20px 0;
+}
+
+p{
+    text-align: center;
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+/* Add a background color and padding to the buttons */
+#button1, #button2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add a hover effect to the buttons */
+#button1:hover, #button2:hover {
+    background-color: #fff;
+    color: #333;
+    
+}
+
+/* Center the buttons using Flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 50%;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid black;
+  
+}
+th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    background: #012733;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-column a {
+    margin-bottom: 10px;
+    color: #ff6f42;
+  }
+  
+  /* Contact Icon */
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 40%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+  }
+  
+  .contact-icon:hover {
+    background: linear-gradient(135deg, #0056b3, #003366);
+   
+  }
+  
+  .contact-icon i {
+    font-size: 28px;
+  }
+  
+  
+  .project-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(rgb(84, 165, 197),rgb(9, 77, 104));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 55%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+  }
+  
+  .project-icon:hover {
+    background: linear-gradient( rgb(84, 165, 197),rgb(9, 77, 104));
+   
+  }
+  
+  .project-icon i {
+    font-size: 22px;
+    margin: 0 2px;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: translateY(-50%) scale(1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+      transform: translateY(-50%) scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+  }
+  

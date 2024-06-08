@@ -1,0 +1,470 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-bar {
+  background: linear-gradient(#3d565e, #012733); 
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px; /* Adjust the height of the logo */
+  margin-right: 10px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  margin-right: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.login-btn {
+  background-color: #FFD700;
+  color: black;
+
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.home-page-face {
+  height: 35px;
+}
+/*
+.container2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  Centers the button horizontally 
+  justify-content: center;  Centers the button vertically 
+  height: 100px;  Adjust height as needed 
+  width: 600px;    
+  background-color: orangered;
+}
+
+.deck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  Centers the button horizontally
+  justify-content: center;  Centers the button vertically
+  height: 300px; /* Adjust height as needed
+  width: 400px;
+  background-color: orange;
+}
+*/
+
+.container1 {
+  position: relative;
+}
+
+.text_in_block {
+  color: white; /* change text color to white   (#3d565e,#012733 , #000000 )   */
+  background: linear-gradient( #000000,#012733);
+  padding: 70px;
+  text-align: center;
+}
+
+.red_text{
+  margin:5px;
+  font-size: 31px;
+  color: #C0C0C0;
+  }
+  
+  .non_red_text{
+    color: white;
+  }
+  
+  .line1, .line2{
+    background-color: #3d565e;
+    height: 3px;
+    margin: 5px;
+  }
+
+.video_in_main {
+  justify-content:center;
+  width:1500px;
+  max-width: 100%; /* Set maximum width to 100% of its container */
+  height: auto; /* Maintain aspect ratio */
+  padding: 0 10px;
+  
+}
+
+.text_on_image h4,
+.text_on_image p,
+.text_on_image h1 {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
+
+.quote1 p{
+padding: 1px;
+font-size:25px;
+font:"Lucida Handwriting"; /* not being applied? */
+color:#002D72;
+}
+  /* vertically aligned buttons - template*/
+.deck {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.deck button {
+  height: 300px;
+  width: 100%;
+}
+
+.template3 {
+  grid-column: 3;
+  width: 300px;
+  height: 300px;
+}
+
+
+
+  .deck button {
+    border:1px solid #0a0a23;
+    text-align: center;
+    display: inline-block; /* Change from inline to inline-block */
+    color:white;
+    font-size: 21px;
+    margin: 10px; /* Adjust margin for space between buttons */
+    height: 300px; /* Increase height */
+    width: 150px; /* Decrease width */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transition effect for smooth scaling */
+    overflow: hidden; /* Keep everything within the bounds of the button */     
+  }
+
+  .deck button:hover {
+      transform: scale(1.1); /* Enlarge the button by 10% */
+  }
+
+
+  /* Style for the button in the deck*/
+.template1{
+      
+        /* Set background image */
+      background-image: url('https://isourcingindia.com/wp-content/uploads/2020/11/Government-Policies-to-Encourage-New-Setups-in-India.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: center; /* Adjust the background position as needed */
+}
+.template2{
+        /* Set background image */
+      background-image: url('https://www.iipm.edu/public/images/news/bigBYST%20lecture%20by%20Mr1354518062.%20hansraj%20senior%20corporate%20manager%20on%20the%20theme%20entrepreneurship%20in%20india%20-%20a%20blueprint%20for%20inclusive%20growth'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: right; /* Adjust the background position as needed */
+}
+.template3{
+    min-width: 300px;
+            /* Set background image */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-4CWNsHYCJDEPMwrDOjvl3e7ogP-LlxXHeWnUpSkVw&s'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: center; /* Adjust the background position as needed */
+  }
+.template4{
+        /* Set background image */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdPSWxlZjDB-p3DVUkj8r57LddyLVvQZSLy7yzXjv8xQ&s'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: left; /* Adjust the background position as needed */
+}
+.template5{
+        /* Set background image */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXx8T1gRXUfUc_wM5OlrvMY-sV7167L0HbXS6iENEC4Q&s'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: center; /* Adjust the background position as needed */
+}
+
+
+
+/* flashcard */
+/* Flashcard container used to center flashcard*/
+h3{
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  text-align: center;
+  padding:2px;
+
+}
+
+.flashcard-container {
+  width: 150px;
+  height: 400px;
+  color: black;
+ 
+}
+
+.flashcard {
+  perspective: 100px;
+  position: center;
+  padding-left: 520px;
+  width: 150px;
+  height: 400px;
+
+}
+
+.front, .back {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flashcard img {
+  width: 200px; /* Set width */
+  height: 200px; /* Set height */
+  border-radius: 50%; /* Make the div circular */
+  justify-content: center;
+  }
+
+.flashcard h4{
+font-size: 20px;
+justify-content: center;
+}
+
+.front {
+  background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* background-image: url("https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s;
+}
+
+.back {
+  /*background-image:url("https://images.unsplash.com/photo-1508615039623-a25605d2b022?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGElMjBkYXJrJTIwYmx1ZSUyMHllbGxvdyUyMGJhY2tncm91bmQlMjBibHVycmVkfGVufDB8fDB8fHww"); */
+  background-image: url("https://plus.unsplash.com/premium_photo-1670513726119-4cc42ba16d40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3JleSUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D");
+  /* background-color: #2774AE; 
+  background-size: contain;   */
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s;
+}
+.back h2{
+  font-size:35px;
+}
+.back_info{
+  font-size:20px;
+  color:black;
+}
+.back_review{
+  color:white;
+  font-size:30px;
+} 
+
+.flashcard:hover .front {
+  transform: rotateY(180deg);
+}
+
+.flashcard:hover .back {
+  transform: rotateY(0deg);
+}
+
+
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.rec{
+  background: linear-gradient(#3d565e, #000000);
+  height: 380px;
+  width: auto;
+  margin: auto;
+  text-align:center;
+}
+
+.rec h4{
+text-align: center;
+font-size: 28px;
+padding-top:11px;
+}
+
+.supporter{
+display: inline-block;
+margin: 0 80px;
+}
+
+.supporter_name{
+  color : white
+}
+.supporter_img{
+width: 200px; /* Set width */
+height: 200px; /* Set height */
+border-radius: 50%; /* Make the div circular */
+background-color: white;
+}
+
+ .carousel { 
+  width: 100%;
+   overflow: hidden;
+} 
+
+/* .carousel div {
+  padding-left: 10px;
+  padding-right: 10px;
+} */
+
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Set a maximum height for the images */
+  object-fit: cover; /* Ensure images cover the entire slide area */
+ 
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  background: #012733;
+  text-align: center;
+  padding: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-column a {
+  margin-bottom: 10px;
+  color: #ff6f42;
+}
+
+/* Contact Icon */
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  top: 40%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+}
+
+.contact-icon:hover {
+  background: linear-gradient(135deg, #0056b3, #003366);
+ 
+}
+
+.contact-icon i {
+  font-size: 28px;
+}
+
+
+.project-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(rgb(84, 165, 197),rgb(9, 77, 104));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  top: 55%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+}
+
+.project-icon:hover {
+  background: linear-gradient( rgb(84, 165, 197),rgb(9, 77, 104));
+ 
+}
+
+.project-icon i {
+  font-size: 22px;
+  margin: 0 2px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translateY(-50%) scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+}
+
